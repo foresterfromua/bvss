@@ -107,7 +107,7 @@ function initSeverityCalculatorBVSS() {
     getSiblings(btn).forEach(function (el) {
       el.classList.remove('active')
     });
-    selectArr(document.querySelectorAll('.js-s-btn'), function (el) {
+    selectArr(document.querySelectorAll('.js-s-btn-bvss'), function (el) {
       el.classList.remove('active')
     });
     selectArr(document.querySelectorAll('.js-s-score'), function (el) {
@@ -117,7 +117,7 @@ function initSeverityCalculatorBVSS() {
     outputCVSS();
   })
 
-  delegatedEvent('click', 'js-s-btn', function (e) {
+  delegatedEvent('click', 'js-s-btn-bvss', function (e) {
     e.preventDefault();
     var btn = e.target;
     btn.classList.add('active');

@@ -3,10 +3,10 @@
 }
 
 body {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
-    font-family: 'PT Sans Caption', sans-serif;
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	font-family: 'PT Sans Caption', sans-serif;
 }
 
 .yield-height-minimum {
@@ -484,7 +484,7 @@ img {
 	margin-right: calc(25% - 2px);
 }
 
-.margin-between > * {
+.margin-between>* {
 	margin-right: line(2);
 }
 
@@ -524,7 +524,7 @@ img {
 }
 
 .align-items-center [class*=""],
-  .align-items-center p {
+.align-items-center p {
 	margin-bottom: 0;
 }
 
@@ -920,4 +920,10 @@ hr.blue {
 	height: min-content;
 	max-height: none;
 	padding: 10px;
+}
+
+.title-calc {
+	font-size: 1.5rem;
+	margin-top: 10px;
+	margin-left: 10px;
 }
