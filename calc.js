@@ -61,7 +61,7 @@ function initSeverityCalculatorBVSS() {
     }).join('/');
   }
 
-  function outputCVSS() {
+  function outputBVSS() {
     var vector = calcVector();
     var result = BVSS.calculateCVSSFromVector(vector);
 
@@ -114,7 +114,7 @@ function initSeverityCalculatorBVSS() {
       el.innerHTML = ''
     });
 
-    outputCVSS();
+    outputBVSS();
   })
 
   delegatedEvent('click', 'js-s-btn-bvss', function (e) {
@@ -159,7 +159,7 @@ function initSeverityCalculatorBVSS() {
         });
       }
 
-      outputCVSS();
+      outputBVSS();
 
     } else {
       var common = split[0].split(':')[1];
@@ -172,7 +172,10 @@ function initSeverityCalculatorBVSS() {
   if (vectorInput && vectorInput.value) {
     parseVector();
   }
+
+  outputBVSS();
 }
+
 document.addEventListener("DOMContentLoaded", function (event) {
   initSeverityCalculatorBVSS();
 });
@@ -194,43 +197,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function delegatedEvent(eventName, targetClass, callback) {
-  document.addEventListener(eventName, function (e) {
-    if (e.target.classList.contains(targetClass)) {
-      callback(e);
-    };
-  })
-}
-
-function selectArr(collection, callback) {
-  Array.from(collection).forEach(callback);
-}
-
-function getChildren(n, skipMe) {
-  var r = [];
-  for (; n; n = n.nextSibling)
-    if (n.nodeType == 1 && n != skipMe)
-      r.push(n);
-  return r;
-};
-
-function getSiblings(n) {
-  return getChildren(n.parentNode.firstChild, n);
-}
 
 function initSeverityCalculator() {
   var sortedLabels = [
@@ -378,6 +344,8 @@ function initSeverityCalculator() {
   if (vectorInput && vectorInput.value) {
     parseVector();
   }
+
+  outputCVSS();
 }
 document.addEventListener("DOMContentLoaded", function (event) {
   initSeverityCalculator();

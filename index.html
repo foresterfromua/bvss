@@ -6,16 +6,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2 class="title-calc">BVSS calculator<h2>
+    <p class="title-calc">BVSS calculator</p>
     <div class="severity-section">
       <div class="form-group severity-common">
         <div class="ser-score js-c-score-bvss"></div>
         <input type="hidden" class="js-input-vector-bvss"/>
-        <button class="btn-sev sev-0 js-s-btn-bvss" data-label="N">None</button>
-        <button class="btn-sev sev-1 js-s-btn-bvss" data-label="L">Low</button>
-        <button class="btn-sev sev-2 js-s-btn-bvss" data-label="M">Medium</button>
-        <button class="btn-sev sev-3 js-s-btn-bvss" data-label="H">High</button>
-        <button class="btn-sev sev-4 js-s-btn-bvss" data-label="C">Critical</button>
       </div>
       <div class="form-group severity-calc">
         <div class="row relative">
@@ -36,7 +31,7 @@
               </div>
               </h5>                
 
-              <button class="btn-sev js-c-btn-bvss" data-value="S">Stolen</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="S">Stolen</button>
               <button class="btn-sev js-c-btn-bvss" data-value="L">Lost</button>
               <button class="btn-sev js-c-btn-bvss" data-value="N">None</button>
             </div>
@@ -54,7 +49,7 @@
                   </div>
                 </div>
               </h5>
-              <button class="btn-sev js-c-btn-bvss" data-value="N">Network</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="N">Network</button>
               <button class="btn-sev js-c-btn-bvss" data-value="P">Physical</button>
             </div>
             <div class="js-sev-block-bvss">
@@ -71,7 +66,7 @@
                   </div>
                 </div>
               </h5>
-              <button class="btn-sev js-c-btn-bvss" data-value="L">Low</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="L">Low</button>
               <button class="btn-sev js-c-btn-bvss" data-value="H">High</button>
             </div>
             <div class="js-sev-block-bvss">
@@ -88,7 +83,7 @@
                   </div>
                 </div>
               </h5>
-              <button class="btn-sev js-c-btn-bvss" data-value="N">None</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="N">None</button>
               <button class="btn-sev js-c-btn-bvss" data-value="R">Required</button>
             </div>
             <div class="js-sev-block-bvss">
@@ -105,7 +100,7 @@
                   </div>
                 </div>
               </h5>
-              <button class="btn-sev js-c-btn-bvss" data-value="N">None</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="N">None</button>
               <button class="btn-sev js-c-btn-bvss" data-value="R">Required</button>
             </div>
             <div class="js-sev-block-bvss">
@@ -123,7 +118,7 @@
                 </div>
               </h5>
               <button class="btn-sev js-c-btn-bvss" data-value="U">Unchanged</button>
-              <button class="btn-sev js-c-btn-bvss" data-value="C">Changed</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="C">Changed</button>
             </div>
           </div>
           <div class="col-sm-4">
@@ -144,7 +139,7 @@
               </h5>
               <button class="btn-sev js-c-btn-bvss" data-value="L">Low</button>
               <button class="btn-sev js-c-btn-bvss" data-value="M">Medium</button>
-              <button class="btn-sev js-c-btn-bvss" data-value="H">High</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="H">High</button>
             </div>
             <div class="js-sev-block-bvss">
               <h5 class="ser-title js-label-bvss" data-label="II">
@@ -163,7 +158,7 @@
               </h5>
               <button class="btn-sev js-c-btn-bvss" data-value="L">Low</button>
               <button class="btn-sev js-c-btn-bvss" data-value="M">Medium</button>
-              <button class="btn-sev js-c-btn-bvss" data-value="H">High</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="H">High</button>
             </div>
             <div class="js-sev-block-bvss">
               <h5 class="ser-title js-label-bvss" data-label="AI">
@@ -182,7 +177,7 @@
               </h5>
               <button class="btn-sev js-c-btn-bvss" data-value="L">Low</button>
               <button class="btn-sev js-c-btn-bvss" data-value="M">Medium</button>
-              <button class="btn-sev js-c-btn-bvss" data-value="H">High</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="H">High</button>
             </div>
             <div class="js-sev-block-bvss">
               <h5 class="ser-title js-label-bvss" data-label="C">
@@ -191,7 +186,7 @@
               <button class="btn-sev js-c-btn-bvss" data-value="N">None</button>
               <button class="btn-sev js-c-btn-bvss" data-value="L">Low</button>
               <button class="btn-sev js-c-btn-bvss" data-value="M">Medium</button>
-              <button class="btn-sev js-c-btn-bvss" data-value="H">High</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="H">High</button>
             </div>
             <div class="js-sev-block-bvss">
               <h5 class="ser-title js-label-bvss" data-label="I">
@@ -200,7 +195,7 @@
               <button class="btn-sev js-c-btn-bvss" data-value="N">None</button>
               <button class="btn-sev js-c-btn-bvss" data-value="L">Low</button>
               <button class="btn-sev js-c-btn-bvss" data-value="M">Medium</button>
-              <button class="btn-sev js-c-btn-bvss" data-value="H">High</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="H">High</button>
             </div>
             <div class="js-sev-block-bvss">
               <h5 class="ser-title js-label-bvss" data-label="A">
@@ -209,22 +204,17 @@
               <button class="btn-sev js-c-btn-bvss" data-value="N">None</button>
               <button class="btn-sev js-c-btn-bvss" data-value="L">Low</button>
               <button class="btn-sev js-c-btn-bvss" data-value="M">Medium</button>
-              <button class="btn-sev js-c-btn-bvss" data-value="H">High</button>
+              <button class="btn-sev js-c-btn-bvss active" data-value="H">High</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-        <h2 class="title-calc">CVSS calculator<h2>
+    <p class="title-calc">CVSS calculator</p>
     <div class="severity-section">
       <div class="form-group severity-common">
         <div class="ser-score js-c-score"></div>
         <input type="hidden" class="js-input-vector"/>
-        <button class="btn-sev sev-0 js-s-btn" data-label="N">None</button>
-        <button class="btn-sev sev-1 js-s-btn" data-label="L">Low</button>
-        <button class="btn-sev sev-2 js-s-btn" data-label="M">Medium</button>
-        <button class="btn-sev sev-3 js-s-btn" data-label="H">High</button>
-        <button class="btn-sev sev-4 js-s-btn" data-label="C">Critical</button>
       </div>
       <div class="form-group severity-calc">
         <div class="row relative">
@@ -245,7 +235,7 @@
                   </div>
                 </div>
               </h5>
-              <button class="btn-sev js-c-btn" data-value="N">Network</button>
+              <button class="btn-sev js-c-btn active" data-value="N">Network</button>
               <button class="btn-sev js-c-btn" data-value="A">Adjacent</button>
               <button class="btn-sev js-c-btn" data-value="L">Local</button>
               <button class="btn-sev js-c-btn" data-value="P">Physical</button>
@@ -264,7 +254,7 @@
                   </div>
                 </div>
               </h5>
-              <button class="btn-sev js-c-btn" data-value="L">Low</button>
+              <button class="btn-sev js-c-btn active" data-value="L">Low</button>
               <button class="btn-sev js-c-btn" data-value="H">High</button>
             </div>
             <div class="js-sev-block">
@@ -282,7 +272,7 @@
                   </div>
                 </div>
               </h5>
-              <button class="btn-sev js-c-btn" data-value="N">None</button>
+              <button class="btn-sev js-c-btn active" data-value="N">None</button>
               <button class="btn-sev js-c-btn" data-value="L">Low</button>
               <button class="btn-sev js-c-btn" data-value="H">High</button>
             </div>
@@ -300,7 +290,7 @@
                   </div>
                 </div>
               </h5>
-              <button class="btn-sev js-c-btn" data-value="N">None</button>
+              <button class="btn-sev js-c-btn active" data-value="N">None</button>
               <button class="btn-sev js-c-btn" data-value="R">Required</button>
             </div>
           </div>
@@ -320,7 +310,7 @@
                 </div>
               </h5>
               <button class="btn-sev js-c-btn" data-value="U">Unchanged</button>
-              <button class="btn-sev js-c-btn" data-value="C">Changed</button>
+              <button class="btn-sev js-c-btn active" data-value="C">Changed</button>
             </div>
             <div class="js-sev-block">
               <h5 class="ser-title js-label" data-label="C">
@@ -339,7 +329,7 @@
               </h5>
               <button class="btn-sev js-c-btn" data-value="N">None</button>
               <button class="btn-sev js-c-btn" data-value="L">Low</button>
-              <button class="btn-sev js-c-btn" data-value="H">High</button>
+              <button class="btn-sev js-c-btn active" data-value="H">High</button>
             </div>
             <div class="js-sev-block">
               <h5 class="ser-title js-label" data-label="I">
@@ -358,7 +348,7 @@
               </h5>
               <button class="btn-sev js-c-btn" data-value="N">None</button>
               <button class="btn-sev js-c-btn" data-value="L">Low</button>
-              <button class="btn-sev js-c-btn" data-value="H">High</button>
+              <button class="btn-sev js-c-btn active" data-value="H">High</button>
             </div>
             <div class="js-sev-block">
               <h5 class="ser-title js-label" data-label="A">
@@ -377,7 +367,7 @@
               </h5>
               <button class="btn-sev js-c-btn" data-value="N">None</button>
               <button class="btn-sev js-c-btn" data-value="L">Low</button>
-              <button class="btn-sev js-c-btn" data-value="H">High</button>
+              <button class="btn-sev js-c-btn active" data-value="H">High</button>
             </div>
           </div>
         </div>
