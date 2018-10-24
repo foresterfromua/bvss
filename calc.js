@@ -37,8 +37,9 @@ function initSeverityCalculatorBVSS() {
     'II',
     'AI'
   ]
-  var scoreContainer = document.querySelector('.js-c-score-bvss');
-  var vectorInput = document.querySelector('.js-input-vector-bvss');
+  const scoreContainer = document.querySelector('.js-c-score-bvss');
+  const vectorInput = document.querySelector('.js-input-vector-bvss');
+  const bvssVector = document.querySelector('.bvss-vector');
 
   function setScoreContainerClass(cssClass) {
     scoreContainer.classList.remove('none', 'low', 'medium', 'high', 'critical');
@@ -64,13 +65,13 @@ function initSeverityCalculatorBVSS() {
   function outputBVSS() {
     var vector = calcVector();
     var result = BVSS.calculateCVSSFromVector(vector);
-
     var str;
     if (vectorInput) {
       if (result.success) {
         str = result.baseSeverity + ' (' + result.baseMetricScore + ')';
         setScoreContainerClass(result.baseSeverity);
         vectorInput.value = vector;
+        bvssVector.innerHTML = vector;
       } else {
         str = 'None';
         vectorInput.value = '';
@@ -209,8 +210,9 @@ function initSeverityCalculator() {
     'I',
     'A'
   ]
-  var scoreContainer = document.querySelector('.js-c-score');
-  var vectorInput = document.querySelector('.js-input-vector');
+  const scoreContainer = document.querySelector('.js-c-score');
+  const vectorInput = document.querySelector('.js-input-vector');
+  const cvssVector = document.querySelector('.cvss-vector');
 
   function setScoreContainerClass(cssClass) {
     scoreContainer.classList.remove('none', 'low', 'medium', 'high', 'critical');
@@ -243,6 +245,7 @@ function initSeverityCalculator() {
         str = result.baseSeverity + ' (' + result.baseMetricScore + ')';
         setScoreContainerClass(result.baseSeverity);
         vectorInput.value = vector;
+        cvssVector.innerHTML = vector;
       } else {
         str = 'None';
         vectorInput.value = '';
