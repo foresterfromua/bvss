@@ -57,7 +57,7 @@ function initSeverityCalculatorBVSS() {
       hash[label] = value;
     })
 
-    return 'BVSS:3.0/' + sortedLabels.map(function (label) {
+    return 'BVSS:1.1/' + sortedLabels.map(function (label) {
       return label + ':' + hash[label];
     }).join('/');
   }
