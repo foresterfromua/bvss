@@ -1,6 +1,6 @@
 var BVSS = {};
 
-BVSS.CVSSVersionIdentifier = "BVSS:3.0";
+BVSS.CVSSVersionIdentifier = "BVSS:1.1";
 
 BVSS.Weight = {
   B: {
@@ -35,6 +35,7 @@ BVSS.Weight = {
     H: 1
   },
   CIAI: {
+    N: 0,
     L: 0.33,
     M: 0.66,
     H: 1

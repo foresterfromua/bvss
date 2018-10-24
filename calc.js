@@ -138,7 +138,7 @@ function initSeverityCalculatorBVSS() {
 
     var vector = vectorInput.value;
     var split = vector.split('/');
-    if (split[0] == 'BVSS:3.0') {
+    if (split[0] == 'BVSS:1.1') {
       var bvss = split.splice(1, split.length);
       var values = [];
       bvss.forEach(function (el) {
