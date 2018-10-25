@@ -198,7 +198,6 @@ BVSS.calculateCVSSFromMetrics = function (
 
   var baseScore;
   baseScore = BVSS.roundUp1(metricWeightB + (10 - metricWeightB) * metricWeightAV * metricWeightAC * metricWeightPR * metricWeightUI * metricWeightS * (1 - (1 - metricWeightC * metricWeightCI) * (1 - metricWeightI * metricWeightII) * (1 - metricWeightA * metricWeightAI)));
-  console.log(baseScore);
   if (baseScore > 10) {
     baseScore = 10;
   }

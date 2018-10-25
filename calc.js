@@ -82,7 +82,6 @@ function initSeverityCalculatorBVSS() {
   }
 
   function outputSimple(value) {
-    console.log(scoreContainer);
     if (scoreContainer) {
       scoreContainer.innerHTML = '';
       var marks = {
@@ -256,7 +255,6 @@ function initSeverityCalculator() {
   }
 
   function outputSimple(value) {
-    console.log(scoreContainer);
     if (scoreContainer) {
       scoreContainer.innerHTML = '';
       var marks = {
