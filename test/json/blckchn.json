@@ -1,15 +1,15 @@
 [{
   "desc": "Remote blockchain Node DoS (network, no privileges)",
-  "base": 0,
-  "vector": 1,
-  "complexity": 1,
-  "privileges": 1,
-  "ui": 1,
-  "scope": 1,
-  "conf_impact": 0,
-  "conf_weight": 0,
-  "integ_impact": 0,
-  "integ_weight": 1,
-  "avail_impact": 1,
-  "avail_weight": 1
+  "base": "N",
+  "vector": "N",
+  "complexity": "L",
+  "privileges": "N",
+  "ui": "N",
+  "scope": "U",
+  "conf_impact": "N",
+  "conf_weight": "N",
+  "integ_impact": "N",
+  "integ_weight": "H",
+  "avail_impact": "H",
+  "avail_weight": "H"
 }]

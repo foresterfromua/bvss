@@ -1,8 +1,9 @@
-let Vulnerability = require('./Vuln.js');
+const VulnerabilityBVSS = require('./VulnBVSS.js');
+const VulnerabilityCVSS = require('./VulnCVSS.js');
 const SCjsonData = require('./json/sc.json');
 const WEBjsonData = require('./json/web.json');
-const BLjsonData = require('./json/blckchn.json');
 const HjsonData = require('./json/hardware.json');
+const BLjsonData = require('./json/blckchn.json');
 
 const arr = [];
 const ALL_TESTCASES = {
@@ -17,12 +18,13 @@ for (let testcase in ALL_TESTCASES) {
 }
 
 arr.forEach(app_type => { // {web}
-  console.log(`-----------------------------------------
-                  NEXT TYPE
------------------------------------------ `)
+  console.log(`--------------- NEXT TYPE --------------- \n`);
 
   app_type.forEach(vuln => { // {vuln = 'Reflected XSS for Primary product'}
-    let entity = new Vulnerability(vuln);
-    console.log(`Desc: ${entity.desc}\nScore: ${entity.calcScore()}\nBVSS: ${entity.calcBvss()}\n"`);
+    let entityBVSS = new VulnerabilityBVSS(vuln);
+    let entityCVSS = new VulnerabilityCVSS(vuln);
+
+    console.log(`Description: ${entityBVSS.desc}\nScore: ${entityBVSS.calcScore()}\nBVSS: ${entityBVSS.calcBvss()}`);
+    console.log(`Score: ${entityCVSS.calcScore()}\nCVSS: ${entityCVSS.calcCvss()}\n`);
   });
 });
