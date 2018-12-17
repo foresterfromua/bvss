@@ -24,7 +24,9 @@ module.exports = class VulnerabilityBVSS {
       },
       vector: {
         N: 1,
-        P: 0.5
+        P: 0.5,
+        L: 0.55,
+        A: 0.62
       },
       complexity: {
         H: 0.8,
@@ -32,7 +34,8 @@ module.exports = class VulnerabilityBVSS {
       },
       privileges: {
         N: 1,
-        R: 0.7,
+        L: 0.7,
+        H: 0.3,
       },
       ui: {
         N: 1,
