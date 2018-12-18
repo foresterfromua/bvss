@@ -3,7 +3,7 @@
 The Blockchain Vulnerability Scoring System (BVSS) is scoring system for all blockchain and crypto projects including blockchain platforms, smart contracts, DApps, hardware wallets, and etc.
 
 ## Calculator
-[Link to BVSS and CVSS calculator](https://foresterfromua.github.io/bvss/src/index.html)
+[Link to BVSS and CVSS calculator](https://foresterfromua.github.io/bvss-calc/src/index.html)
 
 ## BVSS Principle
 
